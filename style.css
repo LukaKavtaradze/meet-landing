@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&family=IBM+Plex+Sans:wght@100;400;600&family=Poppins:wght@100;500;700&family=Red+Hat+Display:ital,wght@0,400;0,700;1,300&display=swap');
+
+
+body{
+    display: flex;
+    align-items: center;
+     flex-direction: column;
+      background: #FAFAFA;
+      height: 100vw;
+}
+
+
+#logo {
+    padding: 48px 146px 0px 146px;
+    width: 119px;
+    height: 28px;
+}
+header{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+
+#groups {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    gap: 16px;
+}
+#group1{
+width: 199px;
+height: 153px;
+}
+#group2{
+ width: 199px;
+height: 153px;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding:  0px 24px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+h1{
+color: #28283D;
+text-align: center;
+font-family: Red Hat Display;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: 44px
+}
+.connect{
+color: #87879D;
+text-align: center;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+padding: 24px 24px 0px 26px;
+}
+.buttons{
+  padding: 32px 67px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 16px;
+}
+#download{
+width: 193px;
+height: 58px;
+border: none;
+flex-shrink: 0;
+background: #4D96A9;
+color: #FFF;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px;
+border-radius: 29px;
+}
+#download span {
+    color: #8FE3F9;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px;
+margin-left: 4px;
+}
+
+#question{
+width: 139px;
+height: 58px;
+border-radius: 29px;
+background: #855FB1;
+border: none;
+color: #FFF;
+text-align: center;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px
+}
+
+.rectangle{
+display: flex;
+width: 56px;
+height: 140px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+padding: 64px 160px 0px 159px;
+
+}
+.line{
+width: 1px;
+height: 84px;
+ stroke-width: 11px; 
+stroke: #87879D; 
+flex-shrink: 0;
+
+}
+.oval{
+width: 56px;
+height: 56px;
+flex-shrink: 0;
+border-radius: 29px;
+border: 1px solid rgba(135, 135, 157, 0.25);
+background: #FAFAFA;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.oval p {
+    color: #87879D;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px;
+padding: 15px; 
+text-align: center;
+}
+
+
+.meeting-pics {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+   padding: 38px 24px 0px 24px;
+     gap: 20px;                                                                              
+
+ 
+}
+#woman{
+    width: 200px;
+    height: 151px;
+flex-shrink: 0;
+border-radius: 10px;
+}
+#women{
+    width: 200px;
+    height: 151px;
+flex-shrink: 0;
+border-radius: 10px;
+}
+#men{
+    width: 200px;
+    height: 151px;
+    flex-shrink: 0; 
+    border-radius: 10px;
+}
+#man{
+width: 200px;
+height: 151px;
+flex-shrink: 0;
+border-radius: 10px;
+}
+
+.womans{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mans{
+ display: flex;
+ justify-content: space-between;
+   gap: 20px
+
+ ;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 24px 0px 24px;
+}
+
+h3{
+    margin-top: 56px;
+    color: #4D96A9;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px; /* 162.5% */
+letter-spacing: 4px;
+text-transform: uppercase;
+}
+
+.universal{
+ margin-top: 24px;
+color: #28283D;
+text-align: center;
+font-family: Red Hat Display;
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: 36px
+}
+
+#abilities{
+    margin-top: 32px;
+    color: #87879D;
+text-align: center;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+}
+
+footer{
+    background-image: url(./mobile-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   gap: 24px
+   ;
+   width: 375px;
+height: 428px;
+    /* padding: 64px 24px 0px 24px; */
+}
+
+.rectangle2{
+    display: flex;
+    width: 56px;
+    height: 140px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    top: -100px;
+     
+    
+}
+
+.line2{
+    width: 1px;
+    height: 84px;
+     stroke-width: 11px; 
+    stroke: #87879D; 
+    flex-shrink: 0;
+    
+    }
+    .oval2{
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 29px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .oval2 p {
+    color: #87879D;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
+    padding: 15px; 
+    text-align: center;
+    }
+
+
+    #experience {
+color: #FAFAFA;
+text-align: center;
+font-family: Red Hat Display;
+font-size: 32px;
+font-style: normal;
+padding:  64px 136px 0px 135px;
+font-weight: 900;
+width: 327px;
+line-height: 36px
+    }
+
+    #info{
+color: #FAFAFA;
+text-align: center;
+font-family: Red Hat Display;
+font-size: 18px;
+font-style: normal;
+width: 327px;
+font-weight: 500;
+line-height: 26px;
+padding-top: 24px;
+    }
+
+#download2{
+width: 193px;
+height: 58px;
+border-radius: 29px;
+background: #855FB1;
+color: #FFF;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px;
+border: none;
+margin-bottom: 20px;
+    }
+
+    #donwload2 span {
+        color: #D9B8FF;
+font-family: Red Hat Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px;
+margin-left: 4px;
+padding: 32px  66px 0px 66px;
+
+    }
+
+    
+
+    
+
