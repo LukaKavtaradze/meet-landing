@@ -25,7 +25,7 @@ header{
 #groups {
     display: flex;
     justify-content: space-between;
-    margin-top: 54px;
+     margin-top: 54px;
     gap: 16px;
 }
 #group1{
@@ -41,8 +41,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 40px;
-    padding:  0px 24px;
+    padding: 0px 24px;
 }
 .title{
     display: flex;
@@ -252,7 +253,7 @@ line-height: 26px;
 }
 
 footer{
-    background-image: url(./mobile-footer.jpg);
+    background-image: url(./asssets/mobile-footer.jpg);
     background-repeat: no-repeat;
     background-position: top;
     margin-top: 200px;
