@@ -5,36 +5,47 @@ body{
     display: flex;
     align-items: center;
      flex-direction: column;
+     justify-content: center;
       background: #FAFAFA;
-      height: 100vw;
+     
 }
 
-
-#logo {
-    padding: 48px 146px 0px 146px;
-    width: 119px;
-    height: 28px;
-}
 header{
+    padding-top: 48px;
     display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
+   gap: 54px;
 
+}
+#logo {
+    width: 119px;
+    height: 28px;
 }
 
 #groups {
     display: flex;
-    justify-content: space-between;
-     margin-top: 54px;
+    align-items: center;
+    flex-direction: column;
     gap: 16px;
-}
+     
+    }
+    .heroes{
+   width: 375px;
+    height: 150px;
+    }
 #group1{
-width: 199px;
-height: 153px;
+width: 150px;
+overflow: hidden;
+height: 120px;
+display: none;
 }
 #group2{
- width: 199px;
-height: 153px;
+    display: none;
+width: 150px;
+overflow: hidden;
+height: 120px;
 
 }
 main {
@@ -42,8 +53,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     margin-top: 40px;
-    padding: 0px 24px;
 }
 .title{
     display: flex;
@@ -51,6 +62,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 48px;
+    gap: 24px;
 }
 h1{
 color: #28283D;
@@ -69,15 +81,15 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 26px;
-padding: 24px 24px 0px 26px;
+width: 327px;
 }
 .buttons{
-  padding: 32px 67px;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    gap: 16px;
+   padding-top: 8px;
 }
 #download{
 width: 193px;
@@ -126,7 +138,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 flex-shrink: 0;
-padding: 64px 160px 0px 159px;
+ padding-top: 56px;
 
 }
 .line{
@@ -167,33 +179,28 @@ text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 64px;
-   padding: 38px 24px 0px 24px;
      gap: 20px;                                                                              
 
  
 }
 #woman{
-    width: 200px;
-    height: 151px;
-flex-shrink: 0;
+    width: 150px;
+    height: 120px;
 border-radius: 10px;
 }
 #women{
-    width: 200px;
-    height: 151px;
-flex-shrink: 0;
+    width: 150px;
+    height: 120px;
 border-radius: 10px;
 }
 #men{
-    width: 200px;
-    height: 151px;
-    flex-shrink: 0; 
+    width: 150px;
+    height: 120px;
     border-radius: 10px;
 }
 #man{
-width: 200px;
-height: 151px;
-flex-shrink: 0;
+width: 150px;
+height: 120px;
 border-radius: 10px;
 }
 
@@ -202,7 +209,6 @@ border-radius: 10px;
     justify-content: space-between;
     gap: 20px;
 }
-
 .mans{
  display: flex;
  justify-content: space-between;
@@ -246,10 +252,10 @@ line-height: 36px
     color: #87879D;
 text-align: center;
 font-family: Red Hat Display;
-font-size: 16px;
-font-style: normal;
+ font-style: normal;
 font-weight: 500;
 line-height: 26px;
+width: 327px;
 }
 
 footer{
@@ -262,12 +268,25 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   gap: 24px
-   ;
+
    width: 375px;
-height: 428px;
+   height: 428px;
     /* padding: 64px 24px 0px 24px; */
 }
+
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #4D96A9, #4D96A9);
+    opacity: 0.8;
+    background-color: #4D96A9; 
+
+  }
 
 .rectangle2{
     display: flex;
@@ -321,10 +340,17 @@ text-align: center;
 font-family: Red Hat Display;
 font-size: 32px;
 font-style: normal;
-padding:  64px 136px 0px 135px;
 font-weight: 900;
 width: 327px;
 line-height: 36px
+    }
+    .footer-ending{
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     #info{
@@ -336,7 +362,7 @@ font-style: normal;
 width: 327px;
 font-weight: 500;
 line-height: 26px;
-padding-top: 24px;
+
     }
 
 #download2{
@@ -355,16 +381,193 @@ margin-bottom: 20px;
     }
 
     #donwload2 span {
-        color: #D9B8FF;
+color: #D9B8FF;
 font-family: Red Hat Display;
 font-size: 16px;
 font-style: normal;
 font-weight: 900;
 line-height: 26px;
 margin-left: 4px;
-padding: 32px  66px 0px 66px;
 
+}
+
+
+
+
+@media(min-width:768px) {
+  #groups{
+    gap: 36px;
+  }
+  .heroes{
+    width: 760px;
+    height: 300px;
+  }                   
+    #group1{
+        width: 360px;
+        height: 300px;
+        display: none;
     }
+    #group2{
+        width: 360px;
+        height: 300px;
+        display: none;
+    }
+
+    h1{
+        font-size: 48px;
+        line-height: 48px;
+        width: 339px;
+    }
+    .connect{
+        width: 457px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .meeting-pics{
+        flex-direction: row;
+    }
+
+    #woman{
+        width: 160px;
+        height:150px;
+    }
+    #women{
+        width: 160px;
+        height:150px;
+    }
+    #men{
+        width: 160px;
+        height:150px;
+    }
+    #man{
+        width: 160px;
+        height:150px;
+    }
+
+    .universal{
+        width: 445px;
+    }
+    #abilities{
+        width: 573px;
+    }
+    footer{
+        background-image: url(./asssets/footer-tablet.jpg);
+        width: 768px;
+        background-position: center;
+    }
+
+    #experience{
+        width: 457px;
+      font-size: 40px;
+      margin-top: 60px
+    }
+    #info{
+        width: 573px;
+        line-height: 26px
+    
+    }
+}
+
+
+@media (min-width:1440px){
+
+   #logo{
+    padding-top: 80px;
+   }
+
+    .heroes{
+        display: none;
+    }
+    #groups{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 88px;
+    }
+    #group1{
+        display: flex;
+    }
+    #group2{
+        display: flex;
+        padding-top: 75px;
+        order: 1;
+    }
+    .title{
+        gap: 34px;
+    }
+    h1{
+        width: 445px;
+        font-size: 64px;
+        line-height: 64px
+    }
+    .connect{
+        width: 540px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .meeting-pics .mans  .womans{
+        gap: 40px;
+    }
+    #woman{
+        width: 268px;
+        height:256px;
+    }
+    #women{
+        width: 268px;
+        height:256px;
+    }
+    #men{
+        width: 268px;
+        height:256px;
+    }
+    #man{
+        width: 268px;
+        height:256px;
+    }
+    #abilities{
+        width: 540px;
+    }
+    footer{
+        background-image: url(./asssets/footer-dekstop.jpg);
+         width: 1440px;
+         height: 300px;
+         background-position: center;
+    }
+    .footer-ending{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+       
+    }
+    #experience{
+        margin: 0;
+    }
+    #info{
+        width: 350px;
+    }
+}
+
+
+
+
+ #download:hover {
+    cursor: pointer;
+    background: #71C0D4;
+ }
+ #download2:hover {
+    background: #B18BDD;
+    cursor: pointer;
+ }
+ #question:hover {
+    cursor: pointer;
+    background: #B18BDD;
+ }
+
+
 
     
 
